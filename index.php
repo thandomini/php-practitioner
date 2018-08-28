@@ -17,16 +17,7 @@
 </head>
 <body>
     <header>
-        <h1><?php 
-
-            //making use of the super global
-            $name = $_GET['name'];
-            echo "Hello, $name"; 
-        
-        ?>
-        
-        </h1>
-
+        <h1><?= "Hello, ".$_GET['name']; ?></h1>
     </header>
 </body>
 </html>
