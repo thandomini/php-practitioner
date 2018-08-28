@@ -16,9 +16,22 @@
     
 </head>
 <body>
-    <header>
-        <h1><?= $greeting; ?></h1>
-        
-    </header>
+    
+    <ul>
+        <!-- a more ellegent way of representing html esp when there's a lot of complicated html to output. -->
+        <?php foreach($names as $name) : ?>
+            <li><?= $name; ?></li> 
+            
+        <?php endforeach; ?> 
+
+
+        <br>
+        <!-- a way to output html. this method is much better when there isn't too much or complicated html to render -->
+        <?php  
+            foreach($names as $name){
+                echo "<li>".$name."</li>"; 
+            }
+        ?>
+    </ul>
 </body>
 </html>
