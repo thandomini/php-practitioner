@@ -7,10 +7,10 @@
     <title>practitioner</title>
 </head>
 <body>
-    
+    <h1>Tasks for the day</h1>
     <ul>
-        <?php foreach($person as $feature => $val) : ?>
-            <li><?= $feature.' &ndash; '.$val; ?></li>
+        <?php foreach($tasks as $task => $val) : ?>
+            <li><?='<strong>'. ucfirst($task).'</strong> &ndash; '.$val; ?></li>
         <?php endforeach; ?> 
     </ul>
 </body>

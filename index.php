@@ -1,17 +1,10 @@
 <?php
-$person =[
-    'age' => 33,
-    'haircolor' => 'black',
-    'career' => 'web developer'
+$tasks = [
+    'title' => 'Finish Tutorial',
+    'due' => 'Today', 
+    'assigned_to' => 'Thando',
+    'completed' => false
 ];
-
-$person['name'] = 'Thando';
-
-unset($person['age']);
-
-echo '<pre>';
-die(var_dump($person));
-echo '</pre>';
 
 
 
