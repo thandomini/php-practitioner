@@ -1,12 +1,18 @@
 <?php
-$names = [
-    'thando',
-    'mncedi',
-    'dishman'
+$person =[
+    'age' => 33,
+    'haircolor' => 'black',
+    'career' => 'web developer'
 ];
 
-// foreach($names as $name){
-//     echo $name.', ';
-// }
+$person['name'] = 'Thando';
+
+unset($person['age']);
+
+echo '<pre>';
+die(var_dump($person));
+echo '</pre>';
+
+
 
 require 'index.view.php';
