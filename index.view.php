@@ -22,7 +22,15 @@
         </li>
 
         <li>
-            <strong>Status: </strong> <?= $tasks['completed'] ? 'Completed' : 'Incoplete'; ?>
+            <!-- ternary operator isn't so good if we want to display some special html tags so reverting to the long way of doing this -->
+            <!-- <strong>Status: </strong> <?= $tasks['completed'] ? 'Finished' : 'Incomplete' ?> -->
+            
+            <strong>Status: </strong>
+            <?php  if ($tasks['completed']) : ?>
+                <span class="icon">&#9989</span>
+            <?php else: ?>
+                <span class="icon">&#x2715</span>
+            <?php endif; ?>
         </li>
 
         
