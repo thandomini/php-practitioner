@@ -9,9 +9,23 @@
 <body>
     <h1>Tasks for the day</h1>
     <ul>
-        <?php foreach($tasks as $task => $val) : ?>
-            <li><?='<strong>'. ucfirst($task).'</strong> &ndash; '.$val; ?></li>
-        <?php endforeach; ?> 
+        <li>
+            <strong>Name: </strong> <?= $tasks['title']; ?>
+        </li>
+
+        <li>
+            <strong>Due Date: </strong> <?= $tasks['due']; ?>
+        </li>
+
+        <li>
+            <strong>Assigned To: </strong> <?= $tasks['assigned_to']; ?>
+        </li>
+
+        <li>
+            <strong>Status: </strong> <?= $tasks['completed'] ? 'Completed' : 'Incoplete'; ?>
+        </li>
+
+        
     </ul>
 </body>
 </html>
