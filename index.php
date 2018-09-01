@@ -1,11 +1,13 @@
 <?php
-$tasks = [
-    'title' => 'Finish Tutorial',
-    'due' => 'Today', 
-    'assigned_to' => 'Thando',
-    'completed' => true
+require 'functions.php';
+$animals = [
+    'dog',
+    'cat'
 ];
 
+$myAge = 18;
 
+leagalAge($myAge);
 
-require 'index.view.php';
+dd($animals);
+//require 'index.view.php';
