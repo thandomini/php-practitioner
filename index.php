@@ -1,40 +1,52 @@
 <?php
-// require 'functions.php';
+// $pdo = new PDO('mysql:host=127.0.0.1;dbname=mytodo;port=8888', 'root');
+// var_dump($pdo);
+
+/*try{
+    echo 'Connecting';
+    $pdo = new PDO('mysql:host=localhost;port=3306;dbname=mytodo;', 'root', '');
+    echo 'connected';
+} catch(PDOException $e){
+    die('could not connect.');
+}
+
+// require 'index.view.php';
+
+// phpinfo(); 
+?>*/
 
 class Task{
-    public $description;
-    public   $completed = false;
+    protected $description;
+
+    protected $completed = false;
 
     public function __construct($description){
-        // Automatically triggered on instantiation
-
         $this->description = $description;
+    }
+
+    public function complete(){
+        $this->completed = true;
+    }
+
+    public function getDescription(){
+        return $this->description;
     }
 
     public function isComplete(){
         return $this->completed;
     }
 
-    public function complete(){
-        $this->completed = true;
-    }
-    
 }
 
 $tasks = [
-    new Task('Go to the store'),
-    new Task('Finish this tutorial'),
-    new Task('Prepare for the braai')
+    new Task('Finish this flippen tutorial'),
+    new Task('Finish the microservices tutorial as well'),
+    new Task('Set a study time table')
 ];
 
-$tasks[0]->complete();
-
-// dd($tasks);
+$tasks[1]->complete();
 
 // $task->complete();
-//var_dump($task->isComplete());
-// var_dump($task->isComplete());
-// $task->complete();
+
 // dd($task);
-
 require 'index.view.php';

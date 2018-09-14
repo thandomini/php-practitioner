@@ -13,10 +13,10 @@
 
             <li>
 
-                <?php if($task->completed): ?>
-                    <strike> <?= $task->description; ?> </strike>
+                <?php if($task->isComplete()): ?>
+                    <strike> <?= $task->getDescription(); ?> </strike>
                 <?php else: ?>
-                    <?= $task->description; ?>
+                    <?= $task->getDescription(); ?>
                 <?php endif; ?>
 
             </li>
