@@ -1,5 +1,7 @@
 <?php
+require('Task.php');
 require('functions.php');
+
 try{
     $pdo = new PDO('mysql:host=localhost;dbname=mytodo', 'root', '');
 } catch (PDOException $e){
@@ -9,8 +11,6 @@ try{
 $statement = $pdo->prepare('select * from todos');
 $statement->execute();
 
-$results = $statement->fetchAll(PDO::FETCH_OBJ);
-
-dd($results[0]->description);
+$tasks = $statement->fetchAll(PDO::FETCH_CLASS, 'Task');
 
 require 'index.view.php';
