@@ -1,0 +1,5 @@
+[Sun Sep 16 07:35:41.597481 2018] [authz_core:error] [pid 16344] [client 127.0.0.1:40832] AH01630: client denied by server configuration: /home/derickfynn/selfTuts/phpPractitioner/index.php
+[Sun Sep 16 07:36:23.788052 2018] [authz_core:error] [pid 16343] [client 127.0.0.1:40846] AH01630: client denied by server configuration: /home/derickfynn/selfTuts/phpPractitioner/index.php
+[Mon Sep 17 23:10:06.739689 2018] [authz_core:error] [pid 8141] [client 127.0.0.1:44924] AH01630: client denied by server configuration: /home/derickfynn/selfTuts/phpPractitioner/index.php
+[Wed Sep 19 22:39:44.504764 2018] [authz_core:error] [pid 3573] [client 127.0.0.1:53372] AH01630: client denied by server configuration: /home/derickfynn/selfTuts/phpPractitioner/index.php
+[Wed Sep 19 22:39:44.646944 2018] [authz_core:error] [pid 3573] [client 127.0.0.1:53372] AH01630: client denied by server configuration: /home/derickfynn/selfTuts/phpPractitioner/index.php
